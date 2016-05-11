@@ -1,24 +1,33 @@
 import {Component} from '@angular/core';
-import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
-import {AboutComponent} from './about/about.component';
-import {ItemsComponent} from './items/items.component.ts';
-import {HomeComponent} from './home/home.component';
-import {MessageService} from './common/message.service.ts';
-import {ItemsService} from './common/items.service.ts';
 
 @Component({
   selector: 'app',
-  template: require('./app.component.html'),
-  styles: [require('./app.component.css')],
-  directives: [ROUTER_DIRECTIVES],
-  providers: [MessageService, ItemsService]
+  styles: [`
+    header {
+      overflow: visible;
+      background-color: white;
+    }
+
+    h1 { text-align: center; }
+  `],
+  template: `
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">
+            <span class="mdl-layout-title">
+              <img class="logo" src="images/logo.png">
+            </span>
+          </span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content content-max-width">
+          <h1>Hello Angular 2!</h1>
+        </div>
+      </main>
+    </div>
+  `
 })
-@Routes([
-  {path: '/', component: HomeComponent},
-  {path: '/home', component: HomeComponent},
-  {path: '/about', component: AboutComponent},
-  {path: '/items', component: ItemsComponent},
-  {path: '/*', component: HomeComponent}
-])
-export class AppComponent {
-}
+
+export class AppComponent {}
