@@ -1,0 +1,26 @@
+<div class="content-card mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">{{ title }}</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    {{ body }}
+  </div>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Messages</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <form>
+      <div class="mdl-textfield mdl-js-textfield mdl-cell--12-col">
+        <input class="mdl-textfield__input" [(ngModel)]="message" placeholder="Message" type="text">
+      </div>
+    </form>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <button (click)="updateMessage(message)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Update Message
+    </button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+header {
+  overflow: visible;
+  background-color: white;
+}
+
+header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+header .mdl-navigation__link:hover {
+  border-bottom: 4px solid #03A9F4;
+}
+
+.mdl-layout__content {
+  background-color: #F3F3F3;
+}
+
+.content-max-width {
+  max-width: 900px;
+  margin: auto;
+}

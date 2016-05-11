@@ -1,0 +1,13 @@
+<div class="item-detail-card mdl-grid mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" (click)="addItem()">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">{{ item.name }}</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <p>
+      {{ item.description }}
+    </p>
+    <p>
+      Total Items: <strong>{{item.count}}</strong>
+    </p>
+  </div>
+</div>
