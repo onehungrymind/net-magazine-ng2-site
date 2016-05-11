@@ -3,20 +3,16 @@
     <div class="mdl-layout__header-row">
       <span class="mdl-layout-title">
         <span class="mdl-layout-title">
-          <a [routerLink]="['/home']"><img class="logo" src="images/logo.png"></a>
+          <img class="logo" src="images/logo.png">
         </span>
       </span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" [routerLink]="['/home']">HOME</a>
-        <a class="mdl-navigation__link" [routerLink]="['/about']">ABOUT</a>
-        <a class="mdl-navigation__link" [routerLink]="['/items']">ITEMS</a>
-      </nav>
     </div>
   </header>
   <main class="mdl-layout__content">
     <div class="page-content content-max-width">
-      <router-outlet></router-outlet>
+      <home></home>
+      <about></about>
+      <items></items>
     </div>
   </main>
 </div>

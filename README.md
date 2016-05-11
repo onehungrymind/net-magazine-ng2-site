@@ -1,5 +1,5 @@
 # Building an Angular 2 Website Using Routes
-This is a simple Angular 2 website using the release candidate router. It demonstrates how to build components and configure routes.
+This is a simple Angular 2 website. It demonstrates how to build components and configure routes.
 
 ## Dependencies
 - You must have `node` and `npm` installed (via `brew install node` or [NodeJS.org](https://nodejs.org/en/));
