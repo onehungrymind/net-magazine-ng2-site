@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import {MessageService} from '../common/message.service.ts';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'about',
@@ -12,19 +11,7 @@ import {MessageService} from '../common/message.service.ts';
     }`
   ]
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   title: string = 'About Page';
   body: string = 'This is the about page body';
-  message: string;
-
-  constructor(public _stateService: MessageService) {
-  }
-
-  ngOnInit() {
-    this.message = this._stateService.getMessage();
-  }
-
-  updateMessage(m: string): void {
-    this._stateService.setMessage(m);
-  }
 }

@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {MessageService} from '../common/message.service.ts';
 
 @Component({
   selector: 'home',
@@ -12,18 +11,7 @@ import {MessageService} from '../common/message.service.ts';
     }`
   ]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   title: string = 'Home Page';
   body:  string = 'This is the about home body';
-  message: string;
-
-  constructor(private _stateService: MessageService) { }
-
-  ngOnInit() {
-    this.message = this._stateService.getMessage();
-  }
-
-  updateMessage(m: string): void {
-    this._stateService.setMessage(m);
-  }
 }

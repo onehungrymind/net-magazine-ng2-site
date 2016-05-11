@@ -3,15 +3,12 @@ import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 import {AboutComponent} from './about/about.component';
 import {ItemsComponent} from './items/items.component.ts';
 import {HomeComponent} from './home/home.component';
-import {MessageService} from './common/message.service.ts';
-import {ItemsService} from './common/items.service.ts';
 
 @Component({
   selector: 'app',
   template: require('./app.component.html'),
   styles: [require('./app.component.css')],
-  directives: [ROUTER_DIRECTIVES],
-  providers: [MessageService, ItemsService]
+  directives: [ROUTER_DIRECTIVES]
 })
 @Routes([
   {path: '/', component: HomeComponent},
